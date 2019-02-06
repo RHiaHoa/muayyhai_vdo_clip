@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link href="../css/main-css.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="row div-topbar">
+        <div class="col-6 icon-topbar">
+            <a href="#" class="btn-manu color-white"> <i class="fas fa-bars"></i> </a>
+        </div>
+        <div class="col-6 text-right icon-topbar">
+            <i class="fas fa-bell"></i>
+        </div>
+    </div>
+
+    <!-- // manu-ber // -->
+    <div class="manu-bar">
+
+        <div class="div-close">
+            <a href="#"><i class="fas fa-times bt-close"></i></a>
+        </div>
+
+        <div class="row head-manu">
+            <div class="col-4"><img src="/image/profile.svg" width="100%"></div>
+            <div class="col-8 fonts div-name-user">
+                <div class="color-white">นาย ธนการ สารศริ</div>
+                <div class="color-yellow"><i class="fas fa-star "></i>150</div>
+            </div>
+        </div>
+
+        <ul>
+            <li><a class="text-li-manu" href="/page/home.html"><i class="fas fa-home icon-manu"></i>หน้าหลัก</a></li>
+            <li><a class="text-li-manu" href="#"><i class="fas fa-pencil-alt icon-manu"></i>แก้ไขโปรไฟล์</a></li>
+            <li><a class="text-li-manu" href="/page/room.html "><i class="fas fa-comment-alt icon-manu"></i>ห้องแชท</a></li>
+            <li><a class="text-li-manu" href="#"><i class="fas fa-gift icon-manu"></i>ของขวัญ</a></li>
+            <li><a class="text-li-manu" href="#"><i class="fas fa-list-alt icon-manu"></i>ประวัติคะแนน</a></li>
+            <li><a class="text-li-manu" href="#"><i class="fas fa-cog icon-manu"></i>ตั้งค่า</a></li>
+        </ul>
+
+    </div>
+    <!-- // end manu-ber // -->
+
+    <div class="div-area-0-0"></div>
+
+
+
+    <div class="main-room">
+
+    </div>
+
+    <div id="loop" style="display:none;">
+        <a href="/page/chat.html">
+            <div class="row div-room">
+                <div class="col-3 div-img-position"><img src="/image/image-logo.svg" width="100%"></div>
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-8 fonts div-center-room">
+                            <div>
+                                <div class="name-room">
+                                    ห้อง 1
+                                </div>
+
+                                <div class="detail-room">
+                                    รายละเอียด
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 fonts div-icon-user-profile">
+                            <div class="size-icon-user-profile">
+                                <i class="fas fa-user text-color-green"></i>
+                                <span  class="detail-room">
+                                    56
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="row div-bottom-bar" style="position:fixed; bottom:0px;">
+        <div class="col-4 icon-topbar div-center">
+            <a href="/page/home.html"><i class="color-white fas fa-home"></i></a>
+        </div>
+        <div class="col-4 icon-topbar div-center">
+            <a href="/page/room.html"><i class="color-white fas fa-comment-alt"></i></a>
+        </div>
+        <div class="col-4 icon-topbar div-center">
+            <a href="/page/profile.html"><i class="color-white fas fa-user"></i></a>
+        </div>
+    </div>
+
+    <div class="div-area-0-0"></div>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.btn-manu').on("click", function () {
+            $('.manu-bar').toggleClass('side');
+        });
+
+        $('.bt-close').on("click", function () {
+            $('.manu-bar').toggleClass('side');
+        });
+
+        $(document).ready(function () {
+            $('.manu-bar').css('min-height', $(document).innerHeight() + "px");
+        });
+
+        
+
+        for (let i = 0; i < 10; i++) {
+            let html = $('#loop').html();
+            $('.main-room').append(html)
+        }
+
+        $('.name-room').each(function(index){
+            $(this).html('ห้อง '+(index+1));
+        });
+
+    </script>
+
+</body>
+
+
+</html>

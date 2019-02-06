@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link href="../css/main-css.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="row div-topbar">
+        <div class="col-6 icon-topbar">
+            <a href="#" class="btn-manu color-white"> <i class="fas fa-bars"></i> </a>
+        </div>
+        <div class="col-6 text-right icon-topbar">
+            <i class="fas fa-bell"></i>
+        </div>
+    </div>
+
+    <!-- // manu-ber // -->
+    <div class="manu-bar">
+
+        <div class="div-close">
+            <a href="#"><i class="fas fa-times bt-close"></i></a>
+        </div>
+
+        <div class="row head-manu">
+            <div class="col-4"><img src="/image/profile.svg" width="100%"></div>
+            <div class="col-8 fonts div-name-user">
+                <div class="color-white">นาย ธนการ สารศริ</div>
+                <div class="color-yellow"><i class="fas fa-star "></i>150</div>
+            </div>
+        </div>
+
+        <ul>
+            <li><a class="text-li-manu" href="/page/home.html"><i class="fas fa-home icon-manu"></i>หน้าหลัก</a></li>
+            <li><a class="text-li-manu" href="#"><i class="fas fa-pencil-alt icon-manu"></i>แก้ไขโปรไฟล์</a></li>
+            <li><a class="text-li-manu" href="/page/room.html"><i class="fas fa-comment-alt icon-manu"></i>ห้องแชท</a></li>
+            <li><a class="text-li-manu" href="#"><i class="fas fa-gift icon-manu"></i>ของขวัญ</a></li>
+            <li><a class="text-li-manu" href="#"><i class="fas fa-list-alt icon-manu"></i>ประวัติคะแนน</a></li>
+            <li><a class="text-li-manu" href="#"><i class="fas fa-cog icon-manu"></i>ตั้งค่า</a></li>
+        </ul>
+
+    </div>
+    <!-- // end manu-ber // -->
+
+    <div class="div-area-0-0"></div>
+
+    <div class="row head-profile">
+        <div class="col-4 div-name-user-3"><img src="/image/profile.svg" width="80%"></div>
+        <div class="col-8 div-name-peofile fonts div-name-user-2">
+            <div>
+                <div class="color-777777">นาย ธนการ สารศริ</div>
+                <div class="color-yellow size-score"><i class="fas fa-star "></i>150</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-manu-profile">
+        <div class="col-3 div-center manu-profile fonts">
+            <div>
+                <center>
+                    <i class="fas fa-pencil-alt icon-manu-profile "></i>
+                    <div class="text-name-profile">แก้ไข</div>
+                </center>
+            </div>
+        </div>
+
+        <div class="col-3 div-center manu-profile fonts">
+            <div>
+                <center>
+                    <i class="fas fa-gift icon-manu-profile "></i>
+                    <div class="text-name-profile">ของขวัญ</div>
+                </center>
+            </div>
+        </div>
+
+        <div class="col-3 div-center manu-profile fonts">
+            <div>
+                <center>
+                    <i class="fas fa-list-alt icon-manu-profile "></i>
+                    <div class="text-name-profile">ประวัติคะแนน</div>
+                </center>
+            </div>
+        </div>
+
+        <div class="col-3 div-center manu-profile fonts">
+            <div>
+                <center>
+                    <i class="fas fa-cog icon-manu-profile "></i>
+                    <div class="text-name-profile">ตั้งค่า</div>
+                </center>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+    <div class="row div-bottom-bar" style="position:fixed; bottom:0px;">
+        <div class="col-4 icon-topbar div-center">
+            <a href="/page/home.html"><i class="color-white fas fa-home"></i></a>
+        </div>
+        <div class="col-4 icon-topbar div-center">
+            <a href="/page/room.html"><i class="color-white fas fa-comment-alt"></i></a>
+        </div>
+        <div class="col-4 icon-topbar div-center">
+            <a href="/page/profile.html"><i class="color-white fas fa-user"></i></a>
+        </div>
+    </div>
+
+
+
+    <div class="div-area-0-0"></div>
+
+
+
+
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.btn-manu').on("click", function () {
+            $('.manu-bar').toggleClass('side');
+        });
+
+        $('.bt-close').on("click", function () {
+            $('.manu-bar').toggleClass('side');
+        });
+
+        $(document).ready(function () {
+            $('.manu-bar').css('min-height', $(document).innerHeight() + "px");
+        });
+
+    </script>
+
+</body>
+
+
+</html>
