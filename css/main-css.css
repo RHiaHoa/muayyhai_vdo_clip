@@ -23,6 +23,10 @@ body{
     width:100%;
 }
 
+.margin-buttom{
+    margin-top:10px;
+}
+
 .padding-0{
     padding:0px !important;
 }
@@ -104,6 +108,14 @@ body{
 
 .text-color-green{
     color: #119455 !important;
+}
+
+.div-login-social-2{
+    padding-left:2px;
+}
+
+.div-login-social{
+    padding-right:2px;
 }
 
 /* ////////// top-bar ///////// */
